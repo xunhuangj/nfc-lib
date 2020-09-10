@@ -53,7 +53,7 @@ mcSimpleRW.setCurKeys(curKeys);
         });
 ```
 **读出数据**
-```
+```java
 mcSimpleRW.setCurKeys(curKeys);
     mcSimpleRW.nfcrw.read(intent, new NfcCall.Callback<MCResponse>() {
             @Override
