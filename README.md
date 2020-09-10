@@ -15,7 +15,7 @@ nfc-lib 格式化，写入数据，读出数据.__目前支持M1卡(MifareClassi
 格式化-> 写入 -> 读取，格式化如果不知道出厂秘钥，可以不填写，系统会默认标准秘钥.格式化时候，你只需要输入新的秘钥即可.每个秘钥支持6位[0-0A-Za-z],或者12位16进制字符串，如果你对这种mifareClassic不太了解，还是先转移下看看MifareClassic,网上介绍资料还是挺多的.
 |**MifareClassic格式化**|**MifareClassic写入数据**|__MifareClassic读出数据__|
 |:--------------------:|:----------------------:|:--------------------:|
-|<img src="https://github.com/xunhuangj/resource/blob/master/nfcimg/nfc_format.jpg" width="80%" height="33%">|<img src="https://github.com/xunhuangj/resource/blob/master/nfcimg/nfc_write.jpg" width="80%" height="33%">|<img src="https://github.com/xunhuangj/resource/blob/master/nfcimg/nfc_read.jpg" width="80%" height="33%">|
+|<img src="https://github.com/xunhuangj/resource/blob/master/nfcimg/nfc_format.jpg" width="80%" height="27%">|<img src="https://github.com/xunhuangj/resource/blob/master/nfcimg/nfc_write.jpg" width="80%" height="27%">|<img src="https://github.com/xunhuangj/resource/blob/master/nfcimg/nfc_read.jpg" width="80%" height="27%">|
 
 ## code(MifareClassic)
 **格式化**
