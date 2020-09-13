@@ -1,0 +1,9 @@
+ext{
+
+    store = [
+            storePath :"xx",
+            storePassword : "xx",
+            keyAlias : "xx",
+            keyPassword:'xx',
+    ]
+}

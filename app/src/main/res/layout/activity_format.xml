@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tip：请将NFC标签或者贴纸靠近手机背面\n写入：如果您希望写入内容只需要输入秘钥A和秘钥B\n格式化：如果您希望格式化数据并重置您的秘钥，您需要写入之前的密码和现在的密码，如果首次使用标签您不知道当前密码无需输入,系统会自动化默认密码."
+        android:id="@+id/textView"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="将写入新的文本数据"
+        android:visibility="gone"
+        android:layout_below="@+id/textView"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/et"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="30dp"
+        android:gravity="top"
+        android:hint="请输入要保存的内容"
+        />
+
+    <TextView
+        android:id="@+id/tv_nfctext"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/et"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+
+
+    <EditText
+        android:id="@+id/et_key1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="请输入当前密码A 0-9A-Za-z"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_nfctext"
+        />
+
+    <EditText
+        android:id="@+id/et_key2"
+        android:layout_width="match_parent"
+        android:layout_below="@id/et_key1"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:hint="请输入当前密码B 0-9A-Za-z"
+        />
+
+
+    <EditText
+        android:id="@+id/et_key3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="请输入新密码A 0-9A-Za-z"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/et_key2"
+        />
+
+    <EditText
+        android:id="@+id/et_key4"
+        android:layout_width="match_parent"
+        android:layout_below="@id/et_key3"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:hint="请输入新密码B 0-9A-Za-z"
+        />
+
+    <LinearLayout
+        android:layout_below="@id/et_key4"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_write"
+            android:text="写入"
+            android:onClick="write"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="格式化"
+            android:onClick="format"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

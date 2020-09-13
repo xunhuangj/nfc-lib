@@ -1,0 +1,69 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+
+    signingConfigs{
+        release {
+            storeFile file(rootProject.ext.store.storePath)
+            storePassword rootProject.ext.store.storePassword
+            keyAlias rootProject.ext.store.keyAlias
+            keyPassword rootProject.ext.store.keyPassword
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            minifyEnabled false
+//            signingConfig signingConfigs.release
+        }
+    }
+
+        lintOptions {
+            abortOnError true
+        }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+}
+
+//build/intermediates/javac/release/compileReleaseJavaWithJavac/classes/
+
+//def SDK_BASENAME ="nfclib.jar" //jar包的名字
+//
+//def sdkJarPath ="build/libs/"    //jar包的位置
+//
+//def zipFile = file('build/intermediates/packaged-classes/release/classes.jar') //需要打包的jar
+//
+//task makeJar(type: Jar) {
+//
+//    from zipTree(zipFile)
+//    from fileTree(dir:'src/main',includes: ['assets/**']) //需要加入的资源那文件
+//    baseName = SDK_BASENAME
+//    destinationDir = file(sdkJarPath)
+//
+//}
+//makeJar.dependsOn(build)
+

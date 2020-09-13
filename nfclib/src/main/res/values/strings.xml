@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Nfc</string>
+    <string name="str_run_app">自动打开短信界面</string>
+    <string name="str_run_url">自动打开百度页面</string>
+    <string name="str_read_text">读MifareClassic标签中的文本数据</string>
+    <string name="str_write_text">写MifareClassic标签中的文本数据</string>
+    <string name="str_read_uri">读NFC标签中的Uri数据</string>
+    <string name="str_write_uri">写NFC标签中的Uri数据</string>
+    <string name="str_read_mu">读NFC标签非NDEF格式的数据</string>
+    <string name="str_write_mu">写NFC标签非NDEF格式的数据</string>
+
+    <string name="info_new_tag_found">发现新标签</string>
+
+    <string name="info_share_error">分享错误</string>
+    <string name="dialog_share_title">分享</string>
+
+    <string name="info_copied_to_clipboard">拷贝到剪切板</string>
+    <string name="info_to_many_keys">错误：太多的密钥(内存不够)</string>
+    <string name="info_no_tag_found">错误：没有发现标签</string>
+    <string name="info_mapping_sector_out_of_range">映射范围错误：扇区超出范围。使用更大的标签。</string>
+
+
+
+    <string name="text_block">块</string>
+    <string name="text_ac_error">错误: 这个配置是未知的</string>
+    <string name="info_valid_dump_double_sector">错误：多次相同的扇区数</string>
+    <string name="info_valid_dump_not_16_bytes">错误：一些块没有16字节(32字符)</string>
+    <string name="info_valid_dump_not_4_or_16_lines">错误：一些扇区没有4或16块(行)</string>
+    <string name="info_valid_dump_not_hex">错误：一些块包含无效数据(不是十六进制)</string>
+    <string name="info_valid_dump_sector_range"><![CDATA[错误：扇区超出范围 (< 0 or > 39)]]></string>
+    <string name="info_valid_keys_no_keys">错误：必须至少有一个密钥</string>
+    <string name="info_valid_keys_not_6_byte">错误：一些密钥没有6字节(12字符)</string>
+    <string name="info_valid_keys_not_hex">错误：一些密钥包含无效数据(不是十六进制)</string>
+    <string name="info_valid_dump_empty_dump">错误：空的转储</string>
+    <string name="info_value_too_big">错误：这个值太大</string>
+    <string name="info_wait_key_map">创建密钥映射中… 请稍等…</string>
+    <string name="info_write_successful">数据写入完成</string>
+
+    <string name="tag_format_successful">数据格式化成功</string>
+    <string name="info_write_permission">写权限需要正常工作</string>
+    <string name="info_write_error">错误：写入发生错误.\n这可能非常糟糕.</string>
+
+    <string name="info_key_map_error">错误：标签连接丢失</string>
+    <string name="info_not_16_byte">错误：数据必须是16字节（32个字符）长</string>
+    <string name="info_not_6_byte_data">错误：信息非6个字节数据目前支持0-9A-Za-z</string>
+    <string name="info_not_hex_data">错误：数据必须是十六进制（0-9和A-F）</string>
+    <string name="info_not_supported_now">此版本不支持此功能。（也许会在未来的版本…）</string>
+
+
+    <string name="info_not_vb">错误：选择的块不是值块</string>
+    <string name="info_nothing_to_write">什么也没写</string>
+    <string name="info_save_error">错误：保存数据时出错</string>
+    <string name="info_save_successful">数据保存成功</string>
+    <string name="info_sector_out_of_range">错误：该扇区不在范围内</string>
+    <string name="info_tag_removed_while_reading">错误：在读的过程中标签移除</string>
+    <string name="info_tag_too_small">错误：标签小于选定的转储</string>
+    <string name="text_ac_incr">增值:</string>
+    <string name="text_ac_pos">位置:</string>
+    <string name="text_ac_read">读块:</string>
+    <string name="text_ac_read_only">访问条件为只读</string>
+
+    <string name="text_block_read_only">块是只读的</string>
+    <string name="text_strange_error">发生了一些奇怪的错误:(</string>
+
+    <string name="info_check_ac_error">错误：标记丢失，同时检查带有写入权限的密钥</string>
+    <string name="text_keys_not_known">Keys (A and B) 未知</string>
+    <string name="text_keys_read_only">Keys (A and B) 只读</string>
+    <string name="text_write_key_a_not_known">写访问密钥(A)未知</string>
+    <string name="text_write_key_b_not_known">写访问密钥(B)未知</string>
+    <string name="info_strange_error">错误：一个奇怪的错误…并且我不知道为什么 :(\n请使用项目页面报告</string>
+
+    <string name="text_sector">扇区</string>
+    <string name="text_invalid_ac_or_sector_dead">无效的访问条件或死扇区:(</string>
+
+    <string name="info_block0_missing">错误：没有制造商的块（块0）</string>
+    <string name="info_block_not_in_sector">错误：该扇区不包含给定数的块。</string>
+    <string name="info_block_out_of_range">错误：该块不在范围内</string>
+    <string name="info_error_writing_block">错误：块是只读或密钥没有写入权限</string>
+</resources>
